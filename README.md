@@ -1,5 +1,5 @@
 # 檢查服務器是否被牆 Telegram BOT
-使用<www.toolsdaquan.com>提供的API接口製作的Telegram BOT，可檢測服務器在大陸有無被牆並自動發送檢測結果到指定的TG帳戶中。
+使用www.toolsdaquan.com提供的API接口製作的Telegram BOT，可檢測服務器在大陸有無被牆並自動發送檢測結果到指定的TG帳戶中。
 
 # Requirements
 + node
