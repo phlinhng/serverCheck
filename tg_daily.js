@@ -3,11 +3,11 @@ const Bluebird = require('bluebird');
 const { TG_BOT_TOKEN, TG_ID, targets, except } = require("./const");
 
 const sendMessage = async (messageText) => {
-  return await axios({
+  return axios({
     method: 'post',
     url: `https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`,
     data: { chat_id: `${TG_ID}`, text: messageText }
-    })
+  }).catch(err => console.log(err))
 }
 
 const checkIP = async (url) => {
@@ -18,7 +18,7 @@ const checkIP = async (url) => {
       "Content-Type": "application/json",
       "Referer": "www.toolsdaquan.com"
     }
-  })
+  }).catch(err => { return { data: {icmp: "fail", tcp: "fail"}, error: err } })
 }
 
 const main = async () => {
