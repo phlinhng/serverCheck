@@ -14,6 +14,3 @@
 # m h dom mon dow  command
 0 8 * * * ~/serverCheck/daily.sh
 ```
-
-# 注意事項
-建議一天不要發超過20則消息（一次2則，所以是檢查10次），可能導致BOT API壞掉。
