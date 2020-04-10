@@ -14,3 +14,5 @@
 # m h dom mon dow  command
 0 8 * * * ~/serverCheck/daily.sh
 ```
+# Screeshot
+![](./preview.png)
